@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lotto_Gotcha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Num 1" translatesAutoresizingMaskIntoConstraints="NO" id="nvb-BJ-2Nt">
+                                <rect key="frame" x="42" y="448" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Num 2" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-h0-2dW">
+                                <rect key="frame" x="156" y="448" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Num 3" translatesAutoresizingMaskIntoConstraints="NO" id="edX-3b-m00">
+                                <rect key="frame" x="272" y="448" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Num 5" translatesAutoresizingMaskIntoConstraints="NO" id="I3i-Wz-gT3">
+                                <rect key="frame" x="212" y="565" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Num 4" translatesAutoresizingMaskIntoConstraints="NO" id="is2-7u-dvO">
+                                <rect key="frame" x="94" y="565" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd9-3y-Z4J">
+                                <rect key="frame" x="96" y="220" width="221" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Lucky">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getNums:" destination="BYZ-38-t0r" eventType="touchDown" id="Y08-Jc-ij1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="nvb-BJ-2Nt" id="FDv-eM-VV6"/>
+                        <outlet property="image2" destination="Z4A-h0-2dW" id="bqG-Xe-cKb"/>
+                        <outlet property="image3" destination="edX-3b-m00" id="uUQ-zb-b3s"/>
+                        <outlet property="image4" destination="is2-7u-dvO" id="BFP-TX-Y8m"/>
+                        <outlet property="image5" destination="I3i-Wz-gT3" id="uoS-dR-eDC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Num 1" width="166.66667175292969" height="166.66667175292969"/>
+        <image name="Num 2" width="500" height="500"/>
+        <image name="Num 3" width="500" height="500"/>
+        <image name="Num 4" width="500" height="500"/>
+        <image name="Num 5" width="500" height="500"/>
+    </resources>
+</document>
